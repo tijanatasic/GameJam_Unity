@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_Rotation : MonoBehaviour
+public class CameraRotation : MonoBehaviour
 {
     [SerializeField] private float sensitivity;
     private Transform parent;

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
@@ -14,10 +15,13 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
     
+    public int points=0;
+    
 
 
     void Start()
     {
+        Physics.gravity = new Vector3(0, -200f, 0);
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
     }
@@ -68,4 +72,11 @@ public class PlayerMovement : MonoBehaviour
         moveSpeed = runSpeed;
         anim.SetFloat("Speed", 1f,0.1f,Time.deltaTime);
     }
+
+    private void OnGUI()
+   {
+        
+     // GUI.TextField(new Rect(10, 10, 100, 20), "Score: " + points);
+   }
+
 }

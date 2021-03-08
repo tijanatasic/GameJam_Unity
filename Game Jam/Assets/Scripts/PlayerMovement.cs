@@ -10,18 +10,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
+    
 
     private Vector3 moveDirection;
     private CharacterController controller;
     private Animator anim;
     
     public int points=0;
-    
+
+
+    public bool end=false;
+    [SerializeField] private GameObject panel;
 
 
     void Start()
     {
-        Physics.gravity = new Vector3(0, -200f, 0);
+        
+        //Physics.gravity = new Vector3(0, -200f, 0);
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
     }
@@ -30,6 +35,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();
+        EndGame();
+    }
+
+    private void EndGame()
+    {
+        if (end)
+        {
+            panel.SetActive(true);
+        }
     }
 
     private void Move()
@@ -73,10 +87,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Speed", 1f,0.1f,Time.deltaTime);
     }
 
-    private void OnGUI()
-   {
-        
-     // GUI.TextField(new Rect(10, 10, 100, 20), "Score: " + points);
-   }
+
 
 }

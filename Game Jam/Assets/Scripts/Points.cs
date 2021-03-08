@@ -6,7 +6,7 @@ using System;
 
 public class Points : MonoBehaviour
 {
-    [SerializeField]public TextMeshProUGUI textMesh;
+    [SerializeField] public TextMeshProUGUI textMesh;
     public int score=0;
 
 

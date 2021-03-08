@@ -19,7 +19,7 @@ public class LookCamera : MonoBehaviour
 
 	void Update()
 	{	
-        // rotation        
+          
         if (Input.GetMouseButton(1)) 
         {
             float rotX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivityX;

@@ -23,8 +23,6 @@ public class MirrorRotation : MonoBehaviour
         {
             Destroy(gameObject);
             collider.GetComponent<Points>().SetScore(++collider.GetComponent<Points>().score);
-            //collider.GetComponent<PlayerMovement>().points++;
-
         }
     }
 }

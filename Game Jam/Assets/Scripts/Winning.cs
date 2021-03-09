@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class Winning : MonoBehaviour
 {
@@ -33,11 +32,16 @@ public class Winning : MonoBehaviour
     public void Win()
     {
         Time.timeScale = 0;
+        openWinnigPanel();
+    }
+
+    private void openWinnigPanel()
+    {
         mainPanel.SetActive(true);
         gameOver.SetActive(false);
         winner.SetActive(true);
     }
-
+    
     public void CountChildren()
     {
         children = transform.childCount;

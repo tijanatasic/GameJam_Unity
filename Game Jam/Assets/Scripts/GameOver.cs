@@ -16,5 +16,4 @@ public class GameOver : MonoBehaviour
         }
     }
 
-   
 }

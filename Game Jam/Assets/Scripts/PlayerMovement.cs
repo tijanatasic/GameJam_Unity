@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
-        //Physics.gravity = new Vector3(0, -200f, 0);
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
     }

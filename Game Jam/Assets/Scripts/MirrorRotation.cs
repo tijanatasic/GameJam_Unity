@@ -1,15 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MirrorRotation : MonoBehaviour 
 {
-    
 
-    void Start()
-    {
-        
-    }
     
     void Update()
     {
@@ -23,6 +19,8 @@ public class MirrorRotation : MonoBehaviour
         {
             Destroy(gameObject);
             collider.GetComponent<Points>().SetScore(++collider.GetComponent<Points>().score);
+            transform.parent.gameObject.GetComponent<Winning>().updateLeft(collider.GetComponent<Points>().score);
+
         }
     }
 }

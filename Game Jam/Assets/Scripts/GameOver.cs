@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    
+
+    [SerializeField] private SoundManager manager;
+
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.name == "Woody")
         {
+            manager.PlayerSounds("hitting");
+            manager.PlayerSounds("gameOver");
             Time.timeScale = 0;
             collider.GetComponent<PlayerMovement>().end=true;
+            
             
         }
     }

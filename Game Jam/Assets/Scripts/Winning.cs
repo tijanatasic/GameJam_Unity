@@ -11,6 +11,9 @@ public class Winning : MonoBehaviour
     [SerializeField] public GameObject mainPanel;
     [SerializeField] public GameObject gameOver;
     [SerializeField] public GameObject winner;
+    [SerializeField] public SoundManager manager;
+    [SerializeField] public GameObject body1;
+    [SerializeField] public GameObject body2;
 
     void Start()
     {
@@ -37,6 +40,9 @@ public class Winning : MonoBehaviour
 
     private void openWinnigPanel()
     {
+        manager.PlayerSounds("winning");
+        body1.SetActive(false);
+        body2.SetActive(false);
         mainPanel.SetActive(true);
         gameOver.SetActive(false);
         winner.SetActive(true);

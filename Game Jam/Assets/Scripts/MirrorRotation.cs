@@ -5,8 +5,8 @@ using TMPro;
 
 public class MirrorRotation : MonoBehaviour 
 {
+    [SerializeField] SoundManager manager;
 
-    
     void Update()
     {
         transform.Rotate(Vector3.up * Time.deltaTime*90);
@@ -18,9 +18,9 @@ public class MirrorRotation : MonoBehaviour
         if (collider.name == "Woody")
         {
             Destroy(gameObject);
+            manager.PlayerSounds("picking");
             collider.GetComponent<Points>().SetScore(++collider.GetComponent<Points>().score);
             transform.parent.gameObject.GetComponent<Winning>().updateLeft(collider.GetComponent<Points>().score);
-
         }
     }
 }

@@ -172,7 +172,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 0
   m_canvasRenderer: {fileID: 3675831}
   m_TextComponent: {fileID: 549348542}
   m_materialReferenceIndex: 2
@@ -455,7 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7118cebdd9d2446a2a0005dad70736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theme: {fileID: 0}
 --- !u!82 &471493006
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1994,7 +1993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.690186, y: -24}
+  m_AnchoredPosition: {x: 32.690186, y: 26}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830020488
@@ -2015,8 +2014,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Woody's crush Jessie accidently broke her favorite mirror. Help Woody finds
-    all the broken parts, fix it and win her heart. So, do you want to play?
+  m_text: Woody's crush Jessie accidently broke her favorite mirror. Help him find
+    all the broken parts, fix it and win her heart. You only have one minute to complete
+    this task. So, do you want to play?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 511eec718f92a474d8a2e599fddeef9c, type: 2}
   m_sharedMaterial: {fileID: 21454468244492504, guid: 511eec718f92a474d8a2e599fddeef9c,
@@ -2052,7 +2052,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 4098
+  m_textAlignment: 258
   m_characterSpacing: -3
   m_wordSpacing: 20
   m_lineSpacing: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 87
+  m_firstOverflowCharacterIndex: 106
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2083,13 +2083,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -120.75743, y: -85.97757, z: -119.43994, w: 0}
+  m_margin: {x: -146.83075, y: -85.97757, z: -148.42969, w: 0}
   m_textInfo:
     textComponent: {fileID: 1830020488}
-    characterCount: 148
+    characterCount: 193
     spriteCount: 0
-    spaceCount: 26
-    wordCount: 27
+    spaceCount: 35
+    wordCount: 36
     linkCount: 0
     lineCount: 6
     pageCount: 1

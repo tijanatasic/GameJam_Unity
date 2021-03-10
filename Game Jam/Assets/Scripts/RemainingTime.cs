@@ -15,7 +15,7 @@ public class RemainingTime : MonoBehaviour
     void Start()
     {
         startTime = 60;
-        time.SetText("Time: 1:00");
+        time.SetText("1:00");
     }
 
     void Update()
@@ -35,10 +35,10 @@ public class RemainingTime : MonoBehaviour
             if (startTime > 0)
             {
                 startTime--;
-                time.SetText("Time: 0: " + startTime);
+                time.SetText("0: " + startTime);
                 if (startTime < 10)
                 {
-                    time.SetText("Time: 0: 0" + startTime);
+                    time.SetText("0" + startTime);
                 }
                 if (startTime == 0)
                 {

@@ -22,14 +22,15 @@ public class SoundManager : MonoBehaviour
                 break;
             case "hitting":
                 audioSource.Stop();
-                audioSource.PlayOneShot(hitting);
-                
+                audioSource.PlayOneShot(hitting, 0.5f);
+                audioSource.PlayOneShot(gameOver);
                 break;
             case "winning":
                 audioSource.Stop();
                 audioSource.PlayOneShot(victory);
                 break;
             case "gameOver":
+                audioSource.Stop();
                 audioSource.PlayOneShot(gameOver);
                 break;
         }

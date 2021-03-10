@@ -38,11 +38,10 @@ public class RemainingTime : MonoBehaviour
                 time.SetText("0: " + startTime);
                 if (startTime < 10)
                 {
-                    time.SetText("0" + startTime);
+                    time.SetText("0:0" + startTime);
                 }
                 if (startTime == 0)
                 {
-                    manager.PlayerSounds("hitting");
                     manager.PlayerSounds("gameOver");
                     Time.timeScale = 0;
                     woody.GetComponent<PlayerMovement>().end = true;

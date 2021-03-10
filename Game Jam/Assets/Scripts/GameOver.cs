@@ -13,7 +13,6 @@ public class GameOver : MonoBehaviour
         if (collider.name == "Woody")
         {
             manager.PlayerSounds("hitting");
-            manager.PlayerSounds("gameOver");
             Time.timeScale = 0;
             collider.GetComponent<PlayerMovement>().end=true;
             
